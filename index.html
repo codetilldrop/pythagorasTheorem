@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pythagoras Theorem</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      opacity: 0.8;
+    }
+
+    .bar {
+      background-color:#00688B;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      margin-left: 1%;
+    }
+
+    .title {
+      animation-duration: 5s;
+      animation-name: fadeIn;
+      text-align: center;
+      text-decoration: underline;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .text {
+      animation-duration: 5s;
+      animation-name: fadeIn;
+      text-align: center;
+      margin: 0 auto;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    } 
+
+    .image {
+      max-width: 30%;
+      max-height: 30%;
+      animation-duration: 5s;
+      animation-name: fadeIn;
+    }
+
+    .centre {
+      text-align: center;
+    }
+
+    .button {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 200%;
+      background-color: #00688B;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding: 1%;
+      border: solid black;
+    }
+
+    .button:hover {
+      background-color: white;
+    }
+
+  </style>
+  <body>
+    <div class = 'bar'>
+      <br>
+      <h1>Pythagoras Hub</h1>
+      <br>
+    </div>
+    <h2 class='title'>Pythagoras Theorem</h2>
+    <p class='text'>- Pythagoras theorem states that the squares of the two short side lengths of a right-angled triangle (opposite and adjacent) added together is equal to the longest side length squared</p>
+    <br>
+    <p class='text'>- The formula for Pythagoras Theorem is:</p>
+    <p class='text'>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+    <br>
+    <br>
+    <h2 class='title'>Meet Terry the Triangle</h2>
+    <br>
+    <p class='text'>- Terry is a Triangle who lives in the maths world. His nationality is Polygons and he lives in Triangle city. He is here today to model for us the parts of the triangle species</p>
+    <div class='centre'>
+    <img src ='Terry.png' class ='image'></img>
+    </div>
+    <div class ='centre'>
+    <br>
+    <button class='button' onclick="hypoFunction()">Go to Hypotenuse Caluclator</button>
+    <br>
+    <br>
+    <button class='button' onclick="shortFunction()">Go to Short side Calculator</button>
+    </div>
+    <br>
+    <p class = 'text'>Image Source: http://trigonomatopoeia.weebly.com/uploads/1/1/2/3/11233188/5618837_orig.png</p>
+    <br>
+  </body>
+  <script>
+    function hypoFunction() {
+      window.location.href = 'hypoCalculator.html'
+    }
+
+    function shortFunction() {
+      window.location.href = 'shortCalculator.html'
+    }
+  </script>
+</html>

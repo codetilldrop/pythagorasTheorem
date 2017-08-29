@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pythagoras Theorem</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      opacity: 0.8;
+    }
+
+    .bar {
+      background-color:#00688B;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      margin-left: 1%;
+    }
+
+    .title {
+      animation-duration: 5s;
+      animation-name: fadeIn;
+      text-align: center;
+      text-decoration: underline;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .text {
+      animation-duration: 5s;
+      animation-name: fadeIn;
+      text-align: center;
+      margin: 0 auto;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    } 
+
+    .image {
+      max-width: 30%;
+      max-height: 30%;
+      animation-duration: 5s;
+      animation-name: fadeIn;
+    }
+
+    .centre {
+      text-align: center;
+    }
+
+    .button {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 150%;
+      background-color: #00688B;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding: 1%;
+      border: solid black;
+    }
+
+    .button:hover {
+      background-color: white;
+    }
+
+    input {
+      font-family: 'Trebuchet MS', sans-serif;
+      border: solid black;
+      font-size: 110%;
+      border-radius: 10px;
+    }
+
+  </style>
+  <body>
+    <div class = 'bar'>
+      <br>
+      <h1>Pythagoras Hub</h1>
+      <br>
+    </div>
+    <h2 class='title'>Hypotenuse Calculator</h2>
+    <div class='centre'>
+      <h2 class='title'>Side A</h2>
+      <input type='number' id='a'>
+      <h2 class='title'>Side B</h2>
+      <input type='number' id='b'>
+    </div>
+    <br>
+    <p class='text' id ='result'></p>
+    <br>
+    <div class ='centre'>
+    <button class='button' onclick="calculate()">Calculate</button>
+    </div>
+    <br>
+  </body>
+  <script>
+    function calculate() {
+      console.log('Function called!')
+      a = document.getElementById('a').value;
+      b = document.getElementById('b').value;
+
+      result = Math.round(Math.sqrt(a ** 2 + b ** 2) * 100) / 100;
+      resultText = document.getElementById('result');
+      resultText.innerHTML = "The hypotenuse has a length equal to " + result.toString()
+    }
+  </script>
+</html>
