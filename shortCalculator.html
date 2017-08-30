@@ -54,6 +54,8 @@
     }
 
     .button {
+      animation-duration: 5s;
+      animation-name: fadeIn;
       font-family: 'Trebuchet MS', sans-serif;
       font-size: 150%;
       background-color: #00688B;
@@ -74,12 +76,29 @@
       border-radius: 10px;
     }
 
+
+    .link {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 120%;
+      color: white
+    }
+
+    .link_move {
+      position: absolute;
+      display: inline;
+      top: 4%;
+      right: 1%;
+    }
+
   </style>
   <body>
     <div class = 'bar'>
       <br>
       <h1>Pythagoras Hub</h1>
       <br>
+      <div class='link_move'>
+      <a href='https://github.com/codetilldrop/pythagorasTheorem' class='link' target='blank'>View Git Repository</a>
+      </div>
     </div>
     <h2 class='title'>Short Side Calculator</h2>
     <div class='centre'>

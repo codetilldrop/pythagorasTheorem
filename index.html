@@ -54,6 +54,8 @@
     }
 
     .button {
+      animation-duration: 5s;
+      animation-name: fadeIn;
       font-family: 'Trebuchet MS', sans-serif;
       font-size: 200%;
       background-color: #00688B;
@@ -67,12 +69,27 @@
       background-color: white;
     }
 
+    .link {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 120%;
+      color: white
+    }
+
+    .link_move {
+      position: absolute;
+      display: inline;
+      top: 4%;
+      right: 1%;
+    }
   </style>
   <body>
     <div class = 'bar'>
       <br>
       <h1>Pythagoras Hub</h1>
       <br>
+      <div class='link_move'>
+      <a href='https://github.com/codetilldrop/pythagorasTheorem' class='link' target='blank'>View Git Repository</a>
+      </div>
     </div>
     <h2 class='title'>Pythagoras Theorem</h2>
     <p class='text'>- Pythagoras theorem states that the squares of the two short side lengths of a right-angled triangle (opposite and adjacent) added together is equal to the longest side length squared</p>
